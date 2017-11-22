@@ -1,37 +1,26 @@
-// Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header.jpg');
-  background-position: center center;
-  @include background-cover;
-  hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
-  p {
-    font-weight: 300;
+  h2 {
+    font-size: 1.3rem;
+    @include body-font;
   }
-  @media (min-width: 768px) {
-    p {
-      font-size: 1.15rem;
-    }
-  }
-  @media (min-width: 992px) {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
     h1 {
-      font-size: 3rem;
+      font-size: 4.75em;
+      line-height: 4rem;
     }
-  }
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 4rem;
+    h2 {
+      font-size: 1.75em;
     }
+
   }
 }

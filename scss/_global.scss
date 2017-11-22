@@ -1,30 +1,6 @@
-// Global styling for this template
-body,
-html {
-  width: 100%;
-  height: 100%;
-}
-
+// Typography
 body {
-  @include serif-font;
-}
-
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: $primary;
-}
-
-hr.light {
-  border-color: $white;
-}
-
-a {
-  color: $primary;
-  @include transition-all;
-  &:hover {
-    color: darken($primary, .1);
-  }
+  @include body-font;
 }
 
 h1,
@@ -33,51 +9,87 @@ h3,
 h4,
 h5,
 h6 {
-  @include sans-serif-font;
+  @include heading-font;
 }
 
-.bg-primary {
-  background-color: $primary !important;
+// Custom Horizontal Rule with Star Icon
+hr.star-light,
+hr.star-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.bg-dark {
-  background-color: $gray-900 !important;
+hr.star-light:after,
+hr.star-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: '\f005';
+  font-family: FontAwesome;
+  font-size: 2em;
 }
 
-.text-faded {
-  color: fade-out($white, .3);
+hr.star-light {
+  border-color: $white;
+}
+hr.star-light:after {
+  color: $white;
+  background-color: $primary;
 }
 
+hr.star-dark {
+  border-color: $secondary;
+}
+hr.star-dark:after {
+  color: $secondary;
+  background-color: white;
+}
+
+// Section Padding Settings
 section {
-  padding: 8rem 0;
+  padding: 6rem 0;
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
 }
 
-.section-heading {
-  margin-top: 0;
+// Custom Button Size
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
 }
 
-::-moz-selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
+// Custom Rounded Social Button
+.btn-social {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
-::selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
-}
-
-img::selection {
-  color: $white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: $white;
-  background: transparent;
-}
-
-body {
-  -webkit-tap-highlight-color: $gray-900;
+// Scroll to Top Button
+.scroll-to-top {
+  z-index: 1042;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: fade-out($gray-900, 0.5);
+    line-height: 3.1rem;
+  }
 }

@@ -1,58 +1,62 @@
 // Styling for the portfolio section
-.portfolio-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 auto;
-  .portfolio-box-caption {
-    position: absolute;
-    bottom: 0;
+.portfolio {
+  margin-bottom: -15px;
+  .portfolio-item {
+    position: relative;
     display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    opacity: 0;
-    color: $white;
-    background: fade-out($primary, .1);
-    @include transition-all;
-    .portfolio-box-caption-content {
+    max-width: 25rem;
+    margin-bottom: 15px;
+    .portfolio-item-caption {
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      opacity: 0;
+      background-color: fade-out($primary, .1);
+      &:hover {
+        opacity: 1;
+      }
+      .portfolio-item-caption-content {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    margin-bottom: -30px;
+    .portfolio-item {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.portfolio-modal {
+  .portfolio-modal-dialog {
+    padding: 3rem 1rem;
+    min-height: calc(100vh - 2rem);
+    margin: 1rem calc(1rem - 8px);
+    position: relative;
+    z-index: 2;
+    -moz-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
+    -webkit-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
+    box-shadow: 0 0 3rem 1rem fade-out(black, .5);
+    .close-button {
       position: absolute;
-      top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
-      text-align: center;
-      .project-category,
-      .project-name {
-        padding: 0 15px;
-        @include sans-serif-font;
-      }
-      .project-category {
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-      .project-name {
-        font-size: 18px;
+      top: 2rem;
+      right: 2rem;
+      i {
+        line-height: 38px;
       }
     }
-  }
-  &:hover {
-    .portfolio-box-caption {
-      opacity: 1;
+    h2 {
+      font-size: 2rem;
     }
   }
-  &:focus {
-    outline: none;
-  }
-  @media (min-width: 768px) {
-    .portfolio-box-caption {
-      .portfolio-box-caption-content {
-        .project-category {
-          font-size: 16px;
-        }
-        .project-name {
-          font-size: 22px;
-        }
+  @media(min-width: 768px) {
+    .portfolio-modal-dialog {
+      min-height: 100vh;
+      padding: 5rem;
+      margin: 3rem calc(3rem - 8px);
+      h2 {
+        font-size: 3rem;
       }
     }
   }
