@@ -529,6 +529,7 @@ mark,
   padding-left: 0;
   list-style: none;
   font-weight: bold;
+  display: inline-block;
 }
 
 .list-unstyled-indent {
@@ -536,6 +537,7 @@ mark,
   list-style-type: circle;
   text-align: left;
   font-size: 12px ;
+  display: inline-block;
 }
 
 .list-inline {
