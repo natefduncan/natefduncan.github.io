@@ -530,7 +530,7 @@ mark,
   padding-left: 0;
   list-style: none;
   font-weight: bold;
-  display: inline-block;
+  display: block;
 }
 
 .list-unstyled-indent {
