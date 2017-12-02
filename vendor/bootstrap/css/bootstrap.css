@@ -35,6 +35,10 @@
   --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.list_size {
+  width: 100px;
+}
+
 @media print {
   *,
   *::before,
