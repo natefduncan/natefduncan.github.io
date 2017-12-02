@@ -36,7 +36,7 @@
 }
 
 .list_size {
-  width: 450px;
+  width: 324px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -3645,7 +3645,7 @@ tbody.collapse.show {
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
-  text-decoration: white;
+  color: white;
 }
 
 .navbar-nav {
