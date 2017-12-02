@@ -47,6 +47,10 @@
   color:white;
 }
 
+.side {
+  display: inline-block;
+}
+
 @media print {
   *,
   *::before,
