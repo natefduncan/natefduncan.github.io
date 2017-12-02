@@ -49,6 +49,7 @@
 
 .side {
   display: inline-block;
+  width: auto;
 }
 
 @media print {
@@ -538,6 +539,7 @@ mark,
   text-align: left;
   font-size: 12px ;
   display: inline-block;
+  font-weight: normal;
 }
 
 .list-inline {
