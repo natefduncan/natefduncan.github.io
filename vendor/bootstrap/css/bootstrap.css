@@ -528,6 +528,7 @@ mark,
   list-style-type: circle;
   display: inline-block;
   text-align: left;
+  font-size: 11px ;
 }
 
 .list-inline {
@@ -3641,6 +3642,7 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; 
+  color: white;
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
