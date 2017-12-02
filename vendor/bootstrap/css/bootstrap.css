@@ -3633,7 +3633,7 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  text-decoration: white; 
+  text-decoration-color: white; 
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
@@ -5731,7 +5731,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .bg-dark {
-  background-color: #fff !important;
+  background-color: #343a40 !important;
 }
 
 a.bg-dark:focus, a.bg-dark:hover {
