@@ -3644,10 +3644,6 @@ tbody.collapse.show {
   color: white;
 }
 
-.navbar-brand:focus, .navbar-brand:hover {
-  color: white;
-}
-
 .navbar-nav {
   display: -ms-flexbox;
   display: flex;
