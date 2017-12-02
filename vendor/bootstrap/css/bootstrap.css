@@ -3641,7 +3641,7 @@ tbody.collapse.show {
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
-  text-decoration: white;
+  text-decoration: black;
 }
 
 .navbar-nav {
