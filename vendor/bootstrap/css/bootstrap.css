@@ -512,11 +512,13 @@ mark,
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  font-weight: bold;
 }
 
 .list-unstyled-indent {
   padding-left: 5;
   list-style-type: circle;
+  display: inline-block;
   text-align: left;
 }
 
@@ -644,6 +646,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
 }
 
 @media (min-width: 576px) {
@@ -3630,11 +3633,11 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  text-decoration-color: white; 
+  text-decoration: white; 
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
-  text-decoration: none;
+  text-decoration: white;
 }
 
 .navbar-nav {
