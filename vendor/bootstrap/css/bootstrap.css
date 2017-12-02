@@ -516,7 +516,11 @@ mark,
 
 .list-unstyled-indent {
   padding-left: 5;
-  list-style: none;
+  list-style-type: circle;
+  display:-moz-inline-stack;
+  display:inline-block;
+  zoom: 1;
+  *display: inline; 
 }
 
 .list-inline {
