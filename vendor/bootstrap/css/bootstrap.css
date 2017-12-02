@@ -36,7 +36,7 @@
 }
 
 .list_size {
-  width: 600px;
+  width: 500px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -3640,8 +3640,7 @@ tbody.collapse.show {
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
-  white-space: nowrap;
-  text-decoration-color: white; 
+  white-space: nowrap; 
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
