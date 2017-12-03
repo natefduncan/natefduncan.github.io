@@ -47,6 +47,10 @@
   color:white;
 }
 
+.list_headers {
+  list-style: none;
+}
+
 @media print {
   *,
   *::before,
